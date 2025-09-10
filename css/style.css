@@ -14,7 +14,7 @@ body {
 }
 
 /* Hide the image on screens smaller than 768px (typical phone) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .logo-img {
         display: none;
     }
