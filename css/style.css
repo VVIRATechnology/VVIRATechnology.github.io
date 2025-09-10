@@ -13,6 +13,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Hide the image on screens smaller than 768px (typical phone) */
+@media (max-width: 767px) {
+    .logo-img {
+        display: none;
+    }
+}
+
 a {
   color: #3fba95;
   transition: 0.5s;
