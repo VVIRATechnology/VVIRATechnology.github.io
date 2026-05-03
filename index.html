@@ -191,6 +191,120 @@
       font-style: italic;
     }
     .arch-banner strong { color: #18d26e; }
+
+    /* ---- Careers Section ---- */
+    #careers {
+      background: #fff;
+      padding: 60px 0;
+    }
+    .careers-intro {
+      font-size: 15px;
+      color: #555;
+      max-width: 680px;
+      margin: 0 auto 40px;
+      text-align: center;
+      line-height: 1.75;
+    }
+    .role-card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.09);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    .role-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.14);
+    }
+    .role-header {
+      padding: 30px 28px 24px;
+      color: #fff;
+    }
+    .role-header .role-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+      opacity: 0.92;
+    }
+    .role-header h4 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 6px;
+    }
+    .role-header .role-type {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      opacity: 0.8;
+      text-transform: uppercase;
+    }
+    .role-body {
+      background: #fdfdfd;
+      padding: 24px 28px 28px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .role-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+    .role-body ul li {
+      padding: 7px 0;
+      font-size: 14px;
+      color: #444;
+      border-bottom: 1px solid #f2f2f2;
+      line-height: 1.5;
+    }
+    .role-body ul li:last-child { border-bottom: none; }
+    .role-body ul li::before {
+      content: "→";
+      margin-right: 9px;
+      font-weight: 700;
+      color: #173b6c;
+    }
+    .pub-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #173b6c, #1f5099);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 5px 13px;
+      border-radius: 20px;
+    }
+    .apply-link {
+      display: inline-block;
+      margin-top: 14px;
+      margin-left: 8px;
+      padding: 6px 18px;
+      border: 2px solid #173b6c;
+      color: #173b6c;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .apply-link:hover {
+      background: #173b6c;
+      color: #fff;
+      text-decoration: none;
+    }
+    .careers-callout {
+      background: linear-gradient(135deg, #0a1628, #173b6c);
+      border-radius: 10px;
+      padding: 28px 36px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .careers-callout p {
+      color: rgba(255,255,255,0.75);
+      margin: 0;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .careers-callout strong { color: #18d26e; }
   </style>
 
 
@@ -239,6 +353,7 @@
           <li><a href="#products">Services</a></li>
           <li><a href="#research">R&amp;D</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#careers">Careers</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -327,11 +442,12 @@
     <!--==========================
       Products Section
     ============================-->
-    <br>
-    <br>
+    
     <section id="products">
       <div class="container">
         <div class="section-header">
+          <br>
+          <br>
           <h2>Our Services</h2>
           <p>We create intelligent platforms that transform learning and healthcare experiences through AI-driven innovation.</p>
         </div>
@@ -484,6 +600,56 @@
 
       
 
+    <!--==========================
+      Careers Section
+    ============================-->
+    <section id="careers">
+      <div class="container">
+        <div class="section-header">
+          <h2>Join Our Team</h2>
+          <p>We're looking for exceptional people who combine deep research skills with a genuine passion for technology that matters.</p>
+        </div>
+
+        <div class="row">
+
+          <!-- AI Scientist -->
+          <div class="col-lg-12 wow fadeInLeft">
+            <div class="role-card">
+              <div class="role-header" style="background: linear-gradient(135deg, #173b6c 0%, #1f5099 100%);">
+                <div class="role-icon"><i class="fa fa-flask"></i></div>
+                <div class="role-type">Open Role</div>
+                <h4>AI Engineer</h4>
+              </div>
+              <div class="role-body">
+                <ul>
+                  <li>Strong grounding in machine learning theory, deep learning, and applied AI</li>
+                  <li>Passion for real-world impact — not just benchmarks</li>
+                  <li>Strong problem-solving skills with rigorous experimental thinking</li>
+                  <li>Design and advance core AI/ML/Agentic algorithms for education and healthcare applications</li>
+                  <li>Bridge research prototypes and production-grade software with strong engineering practices</li>
+                  <li>Lead or contribute to peer-reviewed research in top-tier venues</li>
+                  <li>CORE A* / SCI Q1 Publication experience is a strong bonus.</li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- Shared values callout -->
+        <div class="row wow fadeInUp">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="careers-callout">
+              <p>We value <strong>curiosity</strong>, <strong>rigour</strong>, and <strong>genuine care</strong> for the people our products serve. If you thrive at the intersection of foundational research and real-world impact, we want to hear from you. Please send your CV to <strong>info@vvira.com</strong></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #careers -->
+
   </main>
 
   <!--==========================
@@ -492,7 +658,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>VViraTech 2026</strong>. All Rights Reserved
+        &copy; Copyright <strong>VViraTech 2025</strong>. All Rights Reserved
       </div>
       
     </div>
