@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" width="560" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#08111e"/>
+      <stop offset="100%" style="stop-color:#0d2040"/>
+    </linearGradient>
+    <linearGradient id="parentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#173b6c"/>
+      <stop offset="100%" style="stop-color:#1f5099"/>
+    </linearGradient>
+    <linearGradient id="legendicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5276"/>
+      <stop offset="100%" style="stop-color:#27ae60"/>
+    </linearGradient>
+    <linearGradient id="healisticGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e6655"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="rdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1042"/>
+      <stop offset="100%" style="stop-color:#6c3483"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="480" fill="url(#bg)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.04"/>
+  </pattern>
+  <rect width="560" height="480" fill="url(#dots)"/>
+
+  <!-- ===================== -->
+  <!--  VViraTech (parent)   -->
+  <!-- ===================== -->
+  <rect x="140" y="30" width="280" height="86" rx="10" fill="url(#parentGrad)" filter="url(#shadow)"/>
+  <!-- Left accent stripe -->
+  <rect x="140" y="30" width="6" height="86" rx="3" fill="#18d26e"/>
+  <!-- Icon -->
+  <text x="178" y="84" font-size="34" fill="#fff" fill-opacity="0.85" font-family="Arial">🏢</text>
+  <!-- Company label -->
+  <text x="220" y="62" font-family="Raleway, Arial, sans-serif" font-size="9" font-weight="700" fill="#18d26e" letter-spacing="2">AI SOFTWARE COMPANY</text>
+  <text x="220" y="82" font-family="Raleway, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">VViraTech</text>
+  <text x="220" y="100" font-family="Open Sans, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.65)">Education + Healthcare</text>
+
+  <!-- ===================== -->
+  <!--  Connector lines      -->
+  <!-- ===================== -->
+  <!-- Vertical stem down from parent -->
+  <line x1="280" y1="116" x2="280" y2="148" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Horizontal bar -->
+  <line x1="130" y1="148" x2="430" y2="148" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- Down to Legendic -->
+  <line x1="155" y1="148" x2="155" y2="178" stroke="#27ae60" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Down to Healistic -->
+  <line x1="405" y1="148" x2="405" y2="178" stroke="#1abc9c" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- ===================== -->
+  <!--  Legendic card        -->
+  <!-- ===================== -->
+  <rect x="30" y="178" width="250" height="150" rx="10" fill="url(#legendicGrad)" filter="url(#shadow)"/>
+  <rect x="30" y="178" width="6" height="150" rx="3" fill="#2ecc71"/>
+  <!-- Product badge -->
+  <rect x="46" y="192" width="110" height="18" rx="9" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="205" text-anchor="middle" font-family="Raleway, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" letter-spacing="1.5">EDUCATION PLATFORM</text>
+  <!-- Icon -->
+  <text x="52" y="244" font-size="30" fill="#fff" fill-opacity="0.9" font-family="Arial">🎓</text>
+  <!-- Name -->
+  <text x="92" y="238" font-family="Raleway, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Legendic</text>
+  <!-- Tagline -->
+  <text x="46" y="260" font-family="Open Sans, Arial, sans-serif" font-size="10.5" fill="rgba(255,255,255,0.8)" font-style="italic">Learning &amp; development for students</text>
+  <!-- Features -->
+  <line x1="46" y1="272" x2="264" y2="272" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="54" y="289" font-family="Open Sans, Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">✦  Personalised AI learning pathways</text>
+  <text x="54" y="306" font-family="Open Sans, Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">✦  Interest-based class discovery</text>
+  <text x="54" y="323" font-family="Open Sans, Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">✦  Agentic AI tutoring &amp; skills tracking</text>
+
+  <!-- ===================== -->
+  <!--  Healistic card       -->
+  <!-- ===================== -->
+  <rect x="280" y="178" width="250" height="150" rx="10" fill="url(#healisticGrad)" filter="url(#shadow)"/>
+  <rect x="280" y="178" width="6" height="150" rx="3" fill="#1abc9c"/>
+  <!-- Product badge -->
+  <rect x="296" y="192" width="118" height="18" rx="9" fill="rgba(255,255,255,0.15)"/>
+  <text x="354" y="205" text-anchor="middle" font-family="Raleway, Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" letter-spacing="1.5">HEALTHCARE PLATFORM</text>
+  <!-- Icon -->
+  <text x="302" y="244" font-size="30" fill="#fff" fill-opacity="0.9" font-family="Arial">🏥</text>
+  <!-- Name -->
+  <text x="342" y="238" font-family="Raleway, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Healistic</text>
+  <!-- Tagline -->
+  <text x="296" y="260" font-family="Open Sans, Arial, sans-serif" font-size="10.5" fill="rgba(255,255,255,0.8)" font-style="italic">Wellbeing, care workflows &amp; patients</text>
+  <!-- Features -->
+  <line x1="296" y1="272" x2="514" y2="272" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="304" y="289" font-family="Open Sans, Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">✦  Hospital workflow automation</text>
+  <text x="304" y="306" font-family="Open Sans, Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">✦  Patient triaging &amp; care coordination</text>
+  <text x="304" y="323" font-family="Open Sans, Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">✦  AI-assisted clinical decision support</text>
+
+  <!-- ===================== -->
+  <!--  Connector to R&D     -->
+  <!-- ===================== -->
+  <!-- Down from Legendic -->
+  <line x1="155" y1="328" x2="155" y2="358" stroke="#8e44ad" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Down from Healistic -->
+  <line x1="405" y1="328" x2="405" y2="358" stroke="#8e44ad" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Horizontal bar -->
+  <line x1="130" y1="358" x2="430" y2="358" stroke="#8e44ad" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- Vertical stem to R&D -->
+  <line x1="280" y1="358" x2="280" y2="375" stroke="#8e44ad" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- ===================== -->
+  <!--  AImpact R&D card     -->
+  <!-- ===================== -->
+  <rect x="90" y="375" width="380" height="85" rx="10" fill="url(#rdGrad)" filter="url(#shadow)"/>
+  <rect x="90" y="375" width="6" height="85" rx="3" fill="#9b59b6"/>
+  <!-- Icon -->
+  <text x="112" y="425" font-size="30" fill="#fff" fill-opacity="0.85" font-family="Arial">🧪</text>
+  <!-- Name + label -->
+  <text x="158" y="398" font-family="Raleway, Arial, sans-serif" font-size="9" font-weight="700" fill="#b085d4" letter-spacing="2">FUNDAMENTAL AI RESEARCH LAB</text>
+  <text x="158" y="422" font-family="Raleway, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">AImpact R&amp;D</text>
+  <text x="158" y="442" font-family="Open Sans, Arial, sans-serif" font-size="10.5" fill="rgba(255,255,255,0.65)" font-style="italic">Foundational AI methods · Real-world impact systems</text>
+
+  <!-- Powered by label at very bottom -->
+  <text x="280" y="472" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" letter-spacing="1">RESEARCH POWERS PRODUCTS — PRODUCTS VALIDATE RESEARCH</text>
+</svg>

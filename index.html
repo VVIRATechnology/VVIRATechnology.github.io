@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>VVIRA Technology</title>
+  <title>VViraTech — AI for Learning and Care</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, Agentic AI, Computer Vision, Time Series Forecasting, Healthcare AI, VVIRA">
-  <meta name="description" content="Shaping Technologies and the Future! We build AI for scientific research and real-world problem solving across healthcare, education, security, and industry.">
+  <meta name="keywords" content="VViraTech, Legendic, Healistic, AImpact R&D, AI Education, Healthcare AI, Student Learning Platform, Healthcare Workflow Software, Agentic AI, Applied AI">
+  <meta name="description" content="VViraTech builds applied AI systems for human learning and health. Legendic — education platform for students. Healistic — healthcare software for wellbeing and care. AImpact R&D — foundational AI research.">
 
 
   <!-- Favicons -->
@@ -28,6 +28,170 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+
+  <!-- VViraTech Custom Styles -->
+  <style>
+    /* ---- Product Cards ---- */
+    .product-card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.10);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.16);
+    }
+    .product-header {
+      padding: 38px 30px 30px;
+      color: #fff;
+      text-align: center;
+    }
+    .product-header .product-icon {
+      font-size: 48px;
+      margin-bottom: 14px;
+      opacity: 0.95;
+    }
+    .product-header h3 {
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0 0 6px;
+      letter-spacing: 1px;
+      font-family: 'Raleway', sans-serif;
+    }
+    .product-header .product-tagline {
+      font-size: 13px;
+      opacity: 0.88;
+      margin: 0;
+      font-style: italic;
+    }
+    .product-body {
+      background: #fff;
+      padding: 28px 30px 30px;
+    }
+    .product-body p {
+      color: #555;
+      font-size: 14.5px;
+      line-height: 1.7;
+    }
+    .product-body ul {
+      padding-left: 0;
+      list-style: none;
+      margin-top: 16px;
+    }
+    .product-body ul li {
+      padding: 5px 0;
+      font-size: 14px;
+      color: #444;
+    }
+    .product-body ul li::before {
+      content: "✦";
+      margin-right: 8px;
+      font-size: 10px;
+    }
+    .legendic-li::before  { color: #27ae60; }
+    .healistic-li::before { color: #16a085; }
+
+    /* ---- R&D Section ---- */
+    #research {
+      background: #f4f7fb;
+      padding: 60px 0;
+    }
+    .rd-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.09);
+      overflow: hidden;
+    }
+    .rd-header {
+      background: linear-gradient(135deg, #1a1042, #6c3483);
+      padding: 36px 40px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #fff;
+    }
+    .rd-header .rd-icon {
+      font-size: 52px;
+      opacity: 0.9;
+    }
+    .rd-header h3 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 4px;
+      font-family: 'Raleway', sans-serif;
+    }
+    .rd-header p {
+      margin: 0;
+      opacity: 0.85;
+      font-size: 13px;
+      font-style: italic;
+    }
+    .rd-body {
+      padding: 30px 40px 36px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .rd-body .rd-desc {
+      flex: 1;
+      min-width: 220px;
+    }
+    .rd-body .rd-desc p {
+      color: #555;
+      font-size: 14.5px;
+      line-height: 1.75;
+    }
+    .rd-body .rd-features {
+      flex: 1;
+      min-width: 200px;
+    }
+    .rd-body .rd-features ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .rd-body .rd-features ul li {
+      padding: 6px 0;
+      font-size: 14px;
+      color: #444;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .rd-body .rd-features ul li::before {
+      content: "◈";
+      color: #8e44ad;
+      margin-right: 8px;
+      font-size: 11px;
+    }
+    .rd-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 9px 22px;
+      background: #6c3483;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .rd-link:hover { background: #4a235a; color: #fff; text-decoration: none; }
+
+    /* ---- Architecture banner ---- */
+    .arch-banner {
+      background: linear-gradient(135deg, #0a1628, #173b6c);
+      padding: 32px 0;
+      text-align: center;
+    }
+    .arch-banner p {
+      color: rgba(255,255,255,0.75);
+      font-size: 15px;
+      margin: 0;
+      font-style: italic;
+    }
+    .arch-banner strong { color: #18d26e; }
+  </style>
 
   <!-- =======================================================
     Theme Name: Reveal
@@ -69,25 +233,16 @@
           <img src="img/VVIRA_logo.png" alt="VVIRA Logo" class="logo-img" style="height: 50px; margin-right: 10px;">
         </a>
         <h1 style="margin: 0;">
-            <a href="#body" class="scrollto">VVIRA<span>Technology</span></a>
+            <a href="#body" class="scrollto">VVira<span>Tech</span></a>
         </h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <!-- <li><a href="#team">Team</a></li> -->
-          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#research">R&amp;D</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -100,10 +255,10 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Shaping <span>Technologies</span><br>and the Future!</h2>
+      <h2>AI Systems for<br><span>Learning</span> and Care</h2>
       <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
+        <a href="#products" class="btn-get-started scrollto">Our Products</a>
+        <a href="#research" class="btn-projects scrollto">Our Research</a>
       </div>
     </div>
 
@@ -126,19 +281,17 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 about-img">
-        <img src="img/about-img.png" alt="About Vvira">
+        <img src="img/about-img.svg" alt="About Vvira">
       </div>
 
       <div class="col-lg-6 content">
-        <h2>Making Real-World AImpact</h2>
-        <h3>At VVIRA, we co-create AI technologies with academia and industry to accelerate scientific research and tackle real-world challenges. By combining technical expertise, domain knowledge, and innovation, we aim to provide solutions that create lasting value. Our focus spans the following areas:</h3>
+        <h2>Building AI for Human Progress</h2>
+        <h3>VViraTech is an applied AI software company focused on two domains that matter most — education and healthcare. We build intelligent systems that improve how people learn and how people receive care, powered by research from our own AI lab.</h3>
 
-         <ul>
-          
-          <li><i class="ion-android-checkmark-circle"></i> <strong>Research & Development</strong> – advancing scientific discovery & technological innovation with cutting-edge AI methods and tools.</li>
-          <li><i class="ion-android-checkmark-circle"></i> <strong>Customized AI Solutions</strong> – tailored to meet industry, education, and research needs across diverse domains.</li>
-          <li><i class="ion-android-checkmark-circle"></i> <strong>Professional Training & Workshops</strong> – hands-on programs covering the latest AI techniques and applications.</li>
-          <li><i class="ion-android-checkmark-circle"></i> <strong>Collaborative Innovation</strong> – partnering with academia and industry to co-create impactful AI solutions and co-nurture future talents.</li>
+        <ul>
+          <li><i class="ion-android-checkmark-circle"></i> <strong>Legendic</strong> – Our student learning &amp; development platform. Personalised, interest-driven education powered by agentic AI.</li>
+          <li><i class="ion-android-checkmark-circle"></i> <strong>Healistic</strong> – Our healthcare software platform. AI tools for wellbeing, care workflows, and patient support systems.</li>
+          <li><i class="ion-android-checkmark-circle"></i> <strong>AImpact R&amp;D</strong> – Our foundational AI research lab. The science engine behind both products, open to academia and industry.</li>
         </ul>
       </div>
     </div>
@@ -148,70 +301,116 @@
   <!-- #about -->
 
     <!--==========================
-      Services Section
+      Architecture Banner
     ============================-->
-    <section id="services">
-  <div class="container">
-    <div class="section-header">
-      <h2>Services</h2>
-      <p>Our technological solutions include but are not limited to the following</p>
+    <div class="arch-banner">
+      <div class="container">
+        <p><strong>VViraTech</strong> builds AI systems that improve how people <strong>learn</strong> and how people receive <strong>care</strong> — powered by research from <strong>AImpact R&amp;D</strong></p>
+      </div>
     </div>
 
-    <div class="row">
+    <!--==========================
+      Products Section
+    ============================-->
+    <section id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Two focused platforms built for the people who matter most — students and patients.</p>
+        </div>
 
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft">
-          <div class="icon"><i class="fa fa-comments"></i></div>
-          <h4 class="title">LLM, MLLM, and Agentic AI Solutions</h4>
-          <p class="description">Building intelligent assistants and autonomous agents for enterprise and research applications.</p>
+        <div class="row">
+
+          <!-- Legendic -->
+          <div class="col-lg-6">
+            <div class="product-card wow fadeInLeft">
+              <div class="product-header" style="background: linear-gradient(135deg, #1a5276 0%, #27ae60 100%);">
+                <div class="product-icon"><i class="fa fa-graduation-cap"></i></div>
+                <h3>Legendic</h3>
+                <p class="product-tagline">Learning &amp; development system for students and interest-based education.</p>
+              </div>
+              <div class="product-body">
+                <p>Legendic is an adaptive AI platform that helps students discover their strengths, follow curated learning paths, and grow through interest-driven education — from AI classes for kids to professional upskilling for adults.</p>
+                <ul>
+                  <li class="legendic-li">Personalised AI learning pathways</li>
+                  <li class="legendic-li">Interest-based class discovery</li>
+                  <li class="legendic-li">Skill assessment &amp; progress tracking</li>
+                  <li class="legendic-li">Agentic AI tutoring &amp; smart recommendations</li>
+                  <li class="legendic-li">Agentic AI classes for kids &amp; adults</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Healistic -->
+          <div class="col-lg-6">
+            <div class="product-card wow fadeInRight">
+              <div class="product-header" style="background: linear-gradient(135deg, #0e6655 0%, #1abc9c 100%);">
+                <div class="product-icon"><i class="fa fa-heartbeat"></i></div>
+                <h3>Healistic</h3>
+                <p class="product-tagline">Health software for wellbeing, care workflows, and patient support systems.</p>
+              </div>
+              <div class="product-body">
+                <p>Healistic is an intelligent healthcare software platform that streamlines clinical operations, supports patient wellbeing, and empowers care teams with AI-driven insights — reducing friction so clinicians can focus on care.</p>
+                <ul>
+                  <li class="healistic-li">Hospital workflow &amp; task automation</li>
+                  <li class="healistic-li">Patient triaging &amp; care coordination</li>
+                  <li class="healistic-li">Wellbeing monitoring &amp; support tools</li>
+                  <li class="healistic-li">Clinical data management &amp; analytics</li>
+                  <li class="healistic-li">AI-assisted decision support for clinicians</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section><!-- #products -->
 
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight">
-          <div class="icon"><i class="fa fa-line-chart"></i></div>
-          <h4 class="title">Time Series Forecasting, Anomaly Detection & Analysis</h4>
-          <p class="description">Enabling predictive insights and early warning systems for critical operations.</p>
+    <!--==========================
+      R&D Section
+    ============================-->
+    <section id="research">
+      <div class="container">
+        <div class="section-header">
+          <h2>Research Foundation</h2>
+          <p>The science engine powering both products — open to academia and industry.</p>
         </div>
-      </div>
 
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-          <div class="icon"><i class="fa fa-cogs"></i></div>
-          <h4 class="title">AI-Driven Decision Making</h4>
-          <p class="description">Optimizing operation strategy and policy with advanced AI models.</p>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="rd-card wow fadeInUp">
+              <div class="rd-header">
+                <div class="rd-icon"><i class="fa fa-flask"></i></div>
+                <div>
+                  <h3>AImpact R&amp;D</h3>
+                  <p>Fundamental AI research lab — foundational methods with real-world impact systems.</p>
+                </div>
+              </div>
+              <div class="rd-body">
+                <div class="rd-desc">
+                  <p>AImpact R&amp;D is a multidisciplinary research lab dedicated to advancing the boundaries of artificial intelligence. We work on foundational AI methods — from EEG/ESI signal analysis and biosignal foundation models to agentic architectures and representation learning — then translate that science directly into Legendic and Healistic.</p>
+                  <p>The lab is open to collaboration with universities, hospitals, and industry partners.</p>
+                  <a href="https://aimplifier.github.io/" target="_blank" class="rd-link"><i class="fa fa-external-link" style="margin-right:6px;"></i>Visit AImpact R&amp;D</a>
+                </div>
+                <div class="rd-features">
+                  <ul>
+                    <li>EEG &amp; ESI AI analysis</li>
+                    <li>Biosignal foundation models</li>
+                    <li>Agentic AI architectures</li>
+                    <li>Label-efficient representation learning</li>
+                    <li>Generative diffusion for physiological signals</li>
+                    <li>Cross-domain AI for education &amp; health</li>
+                    <li>Open collaboration with academia &amp; industry</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight" data-wow-delay="0.2s">
-          <div class="icon"><i class="fa fa-stethoscope"></i></div>
-          <h4 class="title">Healthcare AI Assistant</h4>
-          <p class="description">Delivering insights from biosignals, medical imaging, and electronic medical records (EMR).</p>
-        </div>
       </div>
-
-      <div class="col-lg-6">
-        <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-          <div class="icon"><i class="fa fa-video-camera"></i></div>
-          <h4 class="title">Computer Vision</h4>
-          <p class="description">Powering surveillance, monitoring, and automation for safety and efficiency.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="box wow fadeInRight" data-wow-delay="0.2s">
-          <div class="icon"><i class="fa fa-hand-pointer-o"></i></div>
-          <h4 class="title">Human-Machine Interface</h4>
-          <p class="description">
-            Designing intuitive interaction systems that connect humans with AI-driven technologies.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section><!-- #services -->
+    </section><!-- #research -->
 
 
     <!--==========================
@@ -239,117 +438,7 @@
     </section> -->
     <!-- #clients -->
 
-    <!--==========================
-      Our Portfolio Section
-    ============================-->
-    <section id="portfolio" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Projects</h2>
-          <p>
-            We have launched <strong>AImplifier R&D</strong>, an initiative open to academia and industry with a strong research focus. 
-            AImplifier is a multidisciplinary group dedicated to advancing the boundaries of artificial intelligence and exploring its transformative impacts across science, education, and society. 
-            Learn more at <a href="https://aimplifier.github.io/" target="_blank">AImplifier R&D</a>.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="container-fluid">
-        <div class="row no-gutters">
-
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                <img src="img/portfolio/1.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 1</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                <img src="img/portfolio/2.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 2</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                <img src="img/portfolio/3.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 3</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                <img src="img/portfolio/4.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 4</h2></div>
-                </div>
-              </a>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/5.jpg" class="portfolio-popup">
-                <img src="img/portfolio/5.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 5</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/6.jpg" class="portfolio-popup">
-                <img src="img/portfolio/6.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 6</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/7.jpg" class="portfolio-popup">
-                <img src="img/portfolio/7.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 7</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/8.jpg" class="portfolio-popup">
-                <img src="img/portfolio/8.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 8</h2></div>
-                </div>
-              </a>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-    </section><!-- #portfolio -->
+    <!-- #portfolio placeholder removed — content now in Products and R&D sections -->
 
     <!--==========================
       Testimonials Section
@@ -527,7 +616,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Contact Us</h2>
-          <p>For enquiries and collaboration, please reach out to us via email.</p>
+          <p>Interested in Legendic, Healistic, or a research collaboration with AImpact R&amp;D? We'd love to hear from you.</p>
         </div>
 
         <div class="row contact-info">
@@ -600,7 +689,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>VVIRA Technology 2025</strong>. All Rights Reserved
+        &copy; Copyright <strong>VViraTech 2026</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
