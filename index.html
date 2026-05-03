@@ -32,29 +32,35 @@
   <!-- VViraTech Custom Styles -->
   <style>
 
-    /* ---- Header — dark navy gradient, bookends footer ---- */
+    /* ---- Header — fixed, light blue transparent, floats over hero ---- */
+    .sticky-wrapper {
+      height: 0 !important;
+    }
     #header {
-      background: linear-gradient(135deg, #0d1b2a 0%, #173b6c 100%) !important;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.35) !important;
+      position: fixed !important;
+      top: 0; left: 0; width: 100%;
+      background: linear-gradient(135deg, rgba(180,210,255,0.82) 0%, rgba(150,190,255,0.82) 100%) !important;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10) !important;
     }
     #header #logo h1 a {
-      color: #ffffff !important;
+      color: #0c2e8a !important;
     }
     #header #logo h1 a span {
       color: #3fba95 !important;
     }
     .nav-menu a {
-      color: rgba(255,255,255,0.82) !important;
+      color: #1a3a6e !important;
     }
     .nav-menu a:hover,
     .nav-menu > .menu-active > a {
       color: #3fba95 !important;
     }
 
-    /* ---- Hero: extra height so sticky header crops the top 84px, net visible = 60vh ---- */
+    /* ---- Hero: starts at top of page, shows behind fixed transparent header ---- */
     #intro,
     #intro #intro-carousel .item {
-      height: calc(80vh + 84px) !important;
+      height: 80vh !important;
+      margin-top: 0 !important;
     }
 
     /* ---- Hero overlay for readability ---- */
