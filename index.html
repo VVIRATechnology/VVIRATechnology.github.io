@@ -32,6 +32,31 @@
   <!-- VViraTech Custom Styles -->
   <style>
 
+    /* ---- Header — dark navy gradient, bookends footer ---- */
+    #header {
+      background: linear-gradient(135deg, #0d1b2a 0%, #173b6c 100%) !important;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.35) !important;
+    }
+    #header #logo h1 a {
+      color: #ffffff !important;
+    }
+    #header #logo h1 a span {
+      color: #3fba95 !important;
+    }
+    .nav-menu a {
+      color: rgba(255,255,255,0.82) !important;
+    }
+    .nav-menu a:hover,
+    .nav-menu > .menu-active > a {
+      color: #3fba95 !important;
+    }
+
+    /* ---- Hero: extra height so sticky header crops the top 84px, net visible = 60vh ---- */
+    #intro,
+    #intro #intro-carousel .item {
+      height: calc(80vh + 84px) !important;
+    }
+
     /* ---- Hero overlay for readability ---- */
     #intro .intro-content h2 {
       text-shadow: 0 2px 12px rgba(0,0,0,0.55);
@@ -449,23 +474,7 @@
   <!--==========================
     Top Bar
   ============================-->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">info@vvira.com</a>
-        <!-- <i class="fa fa-phone"></i> +1 5589 55488 55 -->
-      </div>
-      <div class="social-links float-right">
-        <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
-        <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> -->
-        <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
-        <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
-        <a href="https://www.linkedin.com/company/vvira-technology" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
+<!--==========================
     Header
   ============================-->
   <header id="header">
@@ -501,8 +510,8 @@
     <div class="intro-content">
       <h2>Shaping <span>Technology</span> & <br>the Future</h2>
       <div>
-        <a href="#products" class="btn-get-started scrollto">Our Services</a>
-        <a href="#research" class="btn-projects scrollto">Our Research</a>
+        <a href="#about" class="btn-get-started scrollto">About Us</a>
+        <a href="#products" class="btn-projects scrollto">Our Services</a>
       </div>
     </div>
 
