@@ -31,6 +31,67 @@
 
   <!-- VViraTech Custom Styles -->
   <style>
+
+    /* ---- Hero overlay for readability ---- */
+    #intro .intro-content h2 {
+      text-shadow: 0 2px 12px rgba(0,0,0,0.55);
+    }
+
+    /* ---- Section backgrounds — each tinted to reflect platform identity ---- */
+    #about    { background: #ffffff; padding: 60px 0; }
+    #products { background: #eef4ff; padding: 60px 0; }   /* Legendic blue tint */
+    #research { background: #f3f0ff; }                    /* AImpact purple tint */
+    #careers  { background: #edfaf4; }                    /* VViraTech green tint */
+    #contact  { background: #ffffff; }
+
+    /* ---- Section header refinement ---- */
+    .section-header h2 {
+      font-size: 28px !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      font-weight: 700;
+    }
+    .section-header p {
+      font-size: 15px;
+      color: #666;
+    }
+
+    /* ---- About section ---- */
+    #about .content h2 {
+      color: #173b6c;
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    #about .content h3 {
+      font-style: normal !important;
+      font-size: 15.5px;
+      line-height: 1.75;
+      color: #555;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+    #about .content ul li {
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    /* ---- Arch banner ---- */
+    .arch-banner {
+      background: linear-gradient(135deg, #0a1628, #173b6c);
+      padding: 28px 0;
+      text-align: center;
+    }
+    .arch-banner p {
+      color: rgba(255,255,255,0.78);
+      font-size: 15px;
+      margin: 0;
+      font-style: italic;
+      line-height: 1.7;
+    }
+    .arch-banner strong { color: #18d26e; font-style: normal; }
+
     /* ---- Product Cards ---- */
     .product-card {
       border-radius: 10px;
@@ -95,7 +156,7 @@
 
     /* ---- R&D Section ---- */
     #research {
-      background: #f4f7fb;
+      background: #f3f0ff;
       padding: 60px 0;
     }
     .rd-card {
@@ -194,7 +255,7 @@
 
     /* ---- Careers Section ---- */
     #careers {
-      background: #fff;
+      background: #edfaf4;
       padding: 60px 0;
     }
     .careers-intro {
@@ -305,6 +366,79 @@
       font-style: italic;
     }
     .careers-callout strong { color: #18d26e; }
+
+    /* ---- Contact Card ---- */
+    .contact-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 40px 50px;
+      margin: 0 auto;
+    }
+    .contact-card-body { display: flex; flex-direction: column; gap: 28px; }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .contact-item-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #173b6c, #1f5099);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon i {
+      font-size: 22px;
+      color: #fff;
+    }
+    .contact-item-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .contact-item-text a, .contact-item-text span:not(.contact-label) {
+      font-size: 16px;
+      font-weight: 500;
+      color: #173b6c;
+      text-decoration: none;
+    }
+    .contact-item-text a:hover { color: #18d26e; }
+    @media (max-width: 576px) {
+      .contact-card { padding: 28px 20px; }
+    }
+
+    /* ---- Footer ---- */
+    #footer { background: #0d1b2a; padding: 30px 0; }
+    #footer .copyright {
+      color: rgba(255,255,255,0.55);
+      font-size: 13px;
+      text-align: center;
+      line-height: 1.8;
+    }
+    #footer .footer-tagline {
+      color: rgba(255,255,255,0.35);
+      font-size: 12px;
+      text-align: center;
+      margin-top: 4px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    #footer .copyright a { color: rgba(255,255,255,0.4); }
+    #footer .copyright a:hover { color: #18d26e; }
+
+    /* ---- Back to top ---- */
+    .back-to-top { background: #18d26e; }
   </style>
 
 
@@ -352,8 +486,8 @@
           <li><a href="#about">About</a></li>
           <li><a href="#products">Services</a></li>
           <li><a href="#research">R&amp;D</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -391,28 +525,27 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-12 content">
+          
+          <div class="col-lg-12 content wow fadeInRight">
             <h2>Building AI for Real-World Progress</h2>
 
             <h3>
-              VViraTech is an AI software company focused on two essential domains:
-              education and healthcare. We build intelligent systems that enhance how people learn
-              and how care is delivered, powered by research from our R&amp;D lab.
+              VViraTech is an applied AI software company focused on two domains that matter most —
+              education and healthcare. We build intelligent systems that improve how people learn
+              and how people receive care, powered by research from our own AI lab.
             </h3>
 
             <ul>
               <li>
                 <i class="ion-android-checkmark-circle"></i>
-                <strong>Legendic</strong> – A personalized learning and student development platform,
+                <strong>Legendic</strong> – A personalised learning and student development platform,
                 powered by agentic AI and adaptive learning systems.
               </li>
-
               <li>
                 <i class="ion-android-checkmark-circle"></i>
                 <strong>Healistic</strong> – A healthcare software platform supporting wellbeing,
                 clinical workflows, and patient care systems through AI tools.
               </li>
-
               <li>
                 <i class="ion-android-checkmark-circle"></i>
                 <strong>AImpact R&amp;D</strong> – Our foundational AI research lab, driving core
@@ -446,8 +579,6 @@
     <section id="products">
       <div class="container">
         <div class="section-header">
-          <br>
-          <br>
           <h2>Our Services</h2>
           <p>We create intelligent platforms that transform learning and healthcare experiences through AI-driven innovation.</p>
         </div>
@@ -570,82 +701,121 @@
     
 
     <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Interested in Legendic, Healistic, or a research collaboration with AImpact R&amp;D? We'd love to hear from you.</p>
-        </div>
-
-        <div class="row contact-info">
-
-          
-
-          <div class="col-md-12">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@vvira.com</a></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      
-
-    <!--==========================
       Careers Section
     ============================-->
     <section id="careers">
       <div class="container">
         <div class="section-header">
           <h2>Join Our Team</h2>
-          <p>We're looking for exceptional people who combine deep research skills with a genuine passion for technology that matters.</p>
+          <p>We are building applied AI for education and healthcare and we’re looking for exceptional people who combine deep research skills with a genuine passion for technology that matters.</p>
         </div>
 
         <div class="row">
 
           <!-- AI Scientist -->
-          <div class="col-lg-12 wow fadeInLeft">
+          <div class="col-lg-6 wow fadeInLeft">
             <div class="role-card">
               <div class="role-header" style="background: linear-gradient(135deg, #173b6c 0%, #1f5099 100%);">
                 <div class="role-icon"><i class="fa fa-flask"></i></div>
+                <div class="role-type">Open Role</div>
+                <h4>AI Scientist</h4>
+              </div>
+              <div class="role-body">
+                <ul>
+                  <li>Design and advance core AI/ML algorithms</li>
+                  <li>Lead or contribute to peer-reviewed research in top-tier venues</li>
+                  <li>Translate research findings into product-ready systems</li>
+                  <li>Strong grounding in ML/DL theory and applied AI</li>
+                  <li>Passion for real-world impact, not just benchmarks</li>
+                  <li>Strong problem-solving skills with rigorous experimental thinking</li>
+                  <li>CORE A* / SCI Q1 publication experience preferred</li>
+                </ul>
+                
+                <!-- <a href="mailto:info@vvira.com?subject=Application: AI Scientist" class="apply-link">Apply Now &rarr;</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Engineer -->
+          <div class="col-lg-6 wow fadeInRight">
+            <div class="role-card">
+              <div class="role-header" style="background: linear-gradient(135deg, #0e6655 0%, #1abc9c 100%);">
+                <div class="role-icon"><i class="fa fa-cogs"></i></div>
                 <div class="role-type">Open Role</div>
                 <h4>AI Engineer</h4>
               </div>
               <div class="role-body">
                 <ul>
-                  <li>Strong foundation in machine learning theory, deep learning, and applied AI systems</li>
-                  <li>Motivated by real-world impact beyond benchmark performance</li>
-                  <li>Strong analytical and problem-solving skills with rigorous experimental thinking</li>
-                  <li>Design and develop core AI/ML and agentic algorithms for education and healthcare applications</li>
-                  <li>Bridge research prototypes with production-grade systems through strong engineering practices</li>
-                  <li>Contribute to or lead peer-reviewed research in top-tier venues</li>
-                  <li>Prior experience with CORE A* / SCI Q1 publications is a strong advantage</li>
-                  <li>Candidates intending to pursue Master’s or PhD studies</li>
+                  <li>Build and deploy scalable AI systems</li>
+                  <li>Bridge research prototypes and production-grade software</li>
+                  <li>Able to read papers and implement ideas rapidly</li>
+                  <li>Strong foundation in ML/DL theory and applied AI systems</li>
+                  <li>Passion for applying AI to problems that genuinely improve lives</li>
+                  <li>Sharp problem-solving skills and an eye for elegant solutions</li>
+                  <li>CORE A* / SCI Q1 publication experience preferred</li>
                 </ul>
                 
+                <!-- <a href="mailto:info@vvira.com?subject=Application: AI Engineer" class="apply-link">Apply Now &rarr;</a> -->
               </div>
             </div>
           </div>
 
-          
         </div>
 
-        <!-- Shared values callout -->
-        <div class="row wow fadeInUp">
+        <!-- Values callout -->
+        <div class="row wow fadeInUp" style="margin-top:10px;">
           <div class="col-lg-10 offset-lg-1">
             <div class="careers-callout">
-              <p>We value <strong>curiosity</strong>, <strong>rigour</strong>, and <strong>genuine care</strong> for the people our products serve. If you thrive at the intersection of foundational research and real-world impact, we want to hear from you. Please send your CV to <strong>info@vvira.com</strong></p>
+              <p>We value <strong>curiosity</strong>, <strong>rigour</strong>, and <strong>genuine care</strong> for the people our products serve. If you thrive at the intersection of foundational research and real-world impact, send your CV to <strong>info@vvira.com</strong></p>
             </div>
           </div>
         </div>
 
       </div>
     </section><!-- #careers -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Interested in Legendic, Healistic, or a research collaboration with AImpact R&amp;D? We’d love to hear from you.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card">
+              <div class="contact-card-body">
+                <div class="contact-item">
+                  <div class="contact-item-icon"><i class="ion-ios-email-outline"></i></div>
+                  <div class="contact-item-text">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:info@vvira.com">info@vvira.com</a>
+                  </div>
+                </div>
+                <!-- <div class="contact-item">
+                  <div class="contact-item-icon"><i class="ion-ios-briefcase-outline"></i></div>
+                  <div class="contact-item-text">
+                    <span class="contact-label">Careers &amp; Collaboration</span>
+                    <a href="mailto:info@vvira.com?subject=Collaboration">info@vvira.com</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon"><i class="fa fa-map-marker"></i></div>
+                  <div class="contact-item-text">
+                    <span class="contact-label">Based In</span>
+                    <span>Malaysia &nbsp;·&nbsp; Building for the world</span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
 
   </main>
 
@@ -655,10 +825,11 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>VViraTech 2025</strong>. All Rights Reserved
-      
-      <div class="copyright">
-      Born in Malaysia, Built for the World</div>
+        &copy; Copyright <strong>VViraTech 2026</strong>. All Rights Reserved
+        &nbsp;·&nbsp;
+        
+      </div>
+      <div class="footer-tagline">Born in Malaysia &nbsp;·&nbsp; Built for the World</div>
     </div>
   </footer><!-- #footer -->
 
