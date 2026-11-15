@@ -183,6 +183,7 @@ button:focus-visible {
   font-size: 21px;
   line-height: 1.45;
   letter-spacing: -0.02em;
+  text-align: justify;
 }
 
 /* About */
@@ -212,6 +213,7 @@ button:focus-visible {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.02em;
+  text-align: justify;
 }
 
 #about .content ul {
@@ -307,7 +309,7 @@ button:focus-visible {
   color: var(--secondary);
   font-size: 19px;
   line-height: 1.55;
-  text-align: center;
+  text-align: justify;
 }
 
 .product-body ul { max-width: 720px; margin: 0 auto; }
@@ -370,7 +372,7 @@ button:focus-visible {
 }
 
 .rd-body { padding: 24px 58px 58px; gap: 60px; }
-.rd-body .rd-desc p { color: var(--secondary); font-size: 16px; line-height: 1.65; }
+.rd-body .rd-desc p { color: var(--secondary); font-size: 16px; line-height: 1.65; text-align: justify; }
 
 .rd-body .rd-features ul li {
   position: relative;
@@ -435,7 +437,7 @@ button:focus-visible {
 .role-body ul li::before { position: absolute; left: 0; color: var(--teal); }
 
 .careers-callout { margin-top: 18px; padding: 36px 42px; background: var(--text); border-radius: var(--radius-md); }
-.careers-callout p { color: var(--soft); font-size: 16px; line-height: 1.6; font-style: normal; }
+.careers-callout p { color: var(--soft); font-size: 16px; line-height: 1.6; font-style: normal; text-align: justify; }
 .careers-callout strong { color: #80d7c2; }
 
 /* Contact and footer */
