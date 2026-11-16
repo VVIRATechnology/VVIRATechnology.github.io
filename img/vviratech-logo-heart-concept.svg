@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VVIRATech heart logo concept</title>
+  <desc id="desc">A red heart-shaped intelligence core with a central white divide, supported by two compact teal wings forming an outer V.</desc>
+
+  <path
+    fill="#287F73"
+    d="M242 422 76 304c-12-9-11-22 2-30l106-62c14-8 29-2 36 13l38 174c3 13-6 25-16 23Z"
+  />
+  <path
+    fill="#287F73"
+    d="m270 422 166-118c12-9 11-22-2-30l-106-62c-14-8-29-2-36 13l-38 174c-3 13 6 25 16 23Z"
+  />
+
+  <path
+    fill="#D94C5C"
+    d="M249 157c-14-22-39-31-64-20-35 15-53 56-42 96 13 48 55 91 106 171V157Z"
+  />
+  <path
+    fill="#D94C5C"
+    d="M263 157c14-22 39-31 64-20 35 15 53 56 42 96-13 48-55 91-106 171V157Z"
+  />
+</svg>

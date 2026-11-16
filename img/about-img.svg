@@ -39,7 +39,7 @@
   <rect width="560" height="480" fill="url(#dots)"/>
 
   <!-- ===================== -->
-  <!--  VViraTech (parent)   -->
+  <!--  VVIRATech (parent)   -->
   <!-- ===================== -->
   <rect x="140" y="30" width="280" height="86" rx="10" fill="url(#parentGrad)" filter="url(#shadow)"/>
   <!-- Left accent stripe -->
@@ -48,7 +48,7 @@
   <text x="178" y="84" font-size="34" fill="#fff" fill-opacity="0.85" font-family="Arial">🏢</text>
   <!-- Company label -->
   <text x="220" y="62" font-family="Raleway, Arial, sans-serif" font-size="9" font-weight="700" fill="#18d26e" letter-spacing="2">AI SOFTWARE COMPANY</text>
-  <text x="220" y="82" font-family="Raleway, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">VViraTech</text>
+  <text x="220" y="82" font-family="Raleway, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">VVIRATech</text>
   <text x="220" y="100" font-family="Open Sans, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.65)">Education + Healthcare</text>
 
   <!-- ===================== -->

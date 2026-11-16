@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VVIRATech logo concept</title>
+  <desc id="desc">A navy intelligence core protected by two compact teal wings forming a subtle V.</desc>
+
+  <path
+    fill="#287F73"
+    d="M242 422 76 304c-12-9-11-22 2-30l106-62c14-8 29-2 36 13l38 174c3 13-6 25-16 23Z"
+  />
+  <path
+    fill="#287F73"
+    d="m270 422 166-118c12-9 11-22-2-30l-106-62c-14-8-29-2-36 13l-38 174c-3 13 6 25 16 23Z"
+  />
+
+  <path
+    fill="#1D3557"
+    d="M249 76c-42 20-73 48-73 84l10 91c1 10 4 20 9 30l54 128V76Z"
+  />
+  <path
+    fill="#1D3557"
+    d="M263 76c42 20 73 48 73 84l-10 91c-1 10-4 20-9 30l-54 128V76Z"
+  />
+</svg>
